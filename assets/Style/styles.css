@@ -1,0 +1,90 @@
+#root {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: start;
+    gap: 2px;
+    max-width: 400px;
+}
+#dropdownContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.container {
+    padding: 10px;
+    background-color: #b6def2;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px; /* Set a max-width to avoid the container from getting too wide on large screens */
+    margin: 0 auto;
+}
+/* Global CSS file for Pitchmark component */
+
+/* Container styling */
+#container {
+    padding: 10px; /* Adjust padding as needed */
+  }
+  
+  /* Dropdown container styling */
+  #dropdownContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Dropdown styling within the dropdown container */
+  #dropdownContainer #dropdown {
+    flex: 1 1 auto; /* Allow to grow and shrink */
+    min-width: 100px; /* Ensure a minimum width */
+    max-width: 200px; /* Set a maximum width */
+    margin-right: 10px;
+  }
+  
+  /* Button styling within the dropdown container */
+  #dropdownContainer #button {
+    flex-shrink: 0; /* Prevent the button from shrinking */
+    max-width: 100px;
+    margin-top: 5px;
+  }
+  
+  /* Search container styling */
+  #searchContainer {
+    display: flex; /* Ensure the search container is a flex container */
+  }
+  
+  /* Search bar styling within the search container */
+  #searchContainer #search {
+    flex: 1; /* Allow the search bar to grow and fill available space */
+    min-width: 0; /* Allow shrinking */
+    max-width: 100%; /* Full width of its container */
+  }
+  
+  /* TextArea styling */
+  .TextArea {
+    width: 100%;
+    margin-bottom: 10px; /* Ensure spacing between TextArea components */
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 600px) {
+    #dropdownContainer {
+      flex-direction: column; /* Stack dropdowns and buttons vertically on small screens */
+    }
+  
+    #dropdownContainer #dropdown {
+      margin-right: 0; /* Remove margin on small screens */
+      margin-bottom: 10px; /* Add margin between stacked items */
+      width: 100%; /* Full width on small screens */
+    }
+  
+    #dropdownContainer #button {
+      margin-top: 10px; /* Ensure proper spacing between stacked items */
+    }
+  
+    #searchContainer #search {
+      width: 100%; /* Full width of its container */
+    }
+  }
+  
