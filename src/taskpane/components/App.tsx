@@ -6,7 +6,7 @@ import Pitchmark from "./Ui/Pitchmark";
 import Variable from "./Ui/Variable";
 function App() {
   return (
-    <div>
+    <div style={{backgroundColor: "#b6def2", height: "100vh"}}>
       <Router>
         <Header />
         <Routes>
